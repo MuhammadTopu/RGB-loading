@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .loading{
+            border: 20px solid white;
+            border-top: 20px solid pink;
+            border-radius: 50%;
+            height: 100px;
+            width: 100px;
+            animation: loading 1s linear infinite ;
+            margin: auto;
+
+            
+        }
+        @keyframes loading{
+            0%{
+                rotate: 0deg;
+               border-top:20px solid green ;
+            }
+            10%{
+                border-top:20px solid blue;
+            }
+            20%{
+                border-top:20px solid red;
+            }
+            30%{
+                border-top:20px solid skyblue;
+            }
+            40%{
+                border-top:20px solid yellow;
+            }
+            50%{
+                border-top:20px solid orange ;
+            }
+            60%{
+                border-top:20px solid magenta ;
+            }
+            70%{
+                border-top:20px solid lime;
+            }
+            80%{
+                border-top:20px solid gray
+            }
+            90%{
+                border-top:20px solid black;
+            }
+            100%{
+                rotate: 360deg;
+            }
+        }
+        h1{
+            animation: p 1s  infinite;
+        }
+        @keyframes p{
+            0%{
+               
+               color:aqua;
+            }
+            10%{
+               color:blue;
+            }
+            20%{
+               color:green;
+            }
+            30%{
+                color:red;
+            }
+            40%{
+                color:yellow;
+            }
+            50%{
+                color:black;
+            }
+            60%{
+                color:gray;
+            }
+            70%{
+                color:magenta;
+            }
+            80%{
+                color:navy;
+            }
+            90%{
+                color:lightcoral;
+            }
+            100%{
+                color:skyblue;
+            }
+        }
+        h4{
+            font-size: x-large;
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Loading:</h1>
+    <h4>Please wait :</h4>
+    <div class="loading"></div>
+</body>
+</html>
